@@ -22,7 +22,7 @@
 - `JDK : Amazon Corretto`
 - **IDE** : IntelliJ IDEA 2023.2.5
 - **Database** : Oracle DB
-- **WAS** : Apache Tomcat
+- **WAS** : Apache Tomcat 10.1.16
 
 <br>
 
