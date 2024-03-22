@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <title>Minimal Lounge</title>
     <link rel="stylesheet" type="text/css" href="css/mainpagestyle.css"/>
+    <script src="main.js"></script>
 </head>
 <body>
 <div id="wrap" class="max-height-container">
@@ -16,7 +17,11 @@
             </a>
         </h1>
 
+
         <div class="inner">
+            <button class="menu-toggle">
+            <span class="icon"></span>
+        </button>
             <ul class="login">
                 <c:if test="${empty sessionScope.userId}">
                     <li><a href="<c:url value='/member/login.do'/>">로그인</a></li>

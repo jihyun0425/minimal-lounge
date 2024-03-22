@@ -31,3 +31,107 @@ h1 a {color: #ef8686; text-decoration: none;}
     background-color: transparent;
     color: white;
 }
+
+
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/
+@media all and (min-width:1024px) and (max-width:1279px) {
+
+   .login {translate: 800px}
+
+    #menu ul li{font-size: 1.4rem}
+
+}
+
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+    .login {translate: 760px}
+
+    #menu ul li{font-size: 1.2rem}
+}
+
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width:480px) and (max-width:767px) {
+    h1 a {font-size: 1.6rem;}
+    .login {display: none}
+
+    #menu ul li{font-size: 1rem}
+
+    .menu-toggle {
+        display: block; /* 햄버거 버튼을 표시 */
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .menu-toggle .icon {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333; /* 햄버거 버튼의 색상 */
+        margin: 5px auto;
+        transition: all 0.3s ease;
+    }
+
+    /* 햄버거 버튼 활성화 시 모양 */
+    .menu-toggle.active .icon:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu-toggle.active .icon:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.active .icon:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* 메뉴를 숨기고, 활성화 시 표시되도록 설정 */
+
+    .login.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width:479px) {
+    h1 a {font-size: 1.4rem}
+    .login {display: none}
+
+    #menu ul li{font-size: 0.8rem}
+
+    .menu-toggle {
+        display: block; /* 햄버거 버튼을 표시 */
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .menu-toggle .icon {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333; /* 햄버거 버튼의 색상 */
+        margin: 5px auto;
+        transition: all 0.3s ease;
+    }
+
+    /* 햄버거 버튼 활성화 시 모양 */
+    .menu-toggle.active .icon:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu-toggle.active .icon:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.active .icon:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* 메뉴를 숨기고, 활성화 시 표시되도록 설정 */
+    .login.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

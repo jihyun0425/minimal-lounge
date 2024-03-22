@@ -9,7 +9,13 @@
 
     <footer id="footer">
         <p>Copyright (c) 2023 Re-Coder</p>
-        <out_logo><a href="<c:url value='/index.do'/>"><img src="../img/profooterlogo.png" alt="프로필 하단 로고"></a></out_logo>
+        <div>
+            <out_logo>
+                <a href="<c:url value='/index.do'/>">
+                    <img src="../img/profooterlogo.png" alt="프로필 하단 로고">
+                </a>
+            </out_logo>
+        </div>
     </footer>
 
 </body>
