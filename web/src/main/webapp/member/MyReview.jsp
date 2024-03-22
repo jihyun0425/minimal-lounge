@@ -70,7 +70,7 @@
 </head>
 <body>
 <h1>
-    <a href="<c:url value='/index.do'/>">Super Hero Story</a>
+    <a href="<c:url value='/index.do'/>">Minimal Lounge</a>
 </h1>
 <div class="mypage">
     <div class="nav">

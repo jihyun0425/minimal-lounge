@@ -87,7 +87,7 @@
 </head>
 <body>
     <h1>
-        <a href="<c:url value='/index.do'/>">Super Hero Story</a>
+        <a href="<c:url value='/index.do'/>">Minimal Lounge</a>
     </h1>
     <form id="loginform" class="box" action="<c:url value='/member/login.do'/>" method="post" onsubmit="return validateForm(this)">
         <input type="hidden" name="mode" value="login"/>

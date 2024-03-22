@@ -6,6 +6,7 @@
 <head>
     <title>상세페이지</title>
     <link rel="stylesheet" type="text/css" href="../css/textPagestyle.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/header.css"/>
     <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor-viewer.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -16,8 +17,10 @@
         <input type="hidden" name="id" value="${post.id}"/>
         <input type="hidden" name="action" value="delete"/>
         <div id="content" style="display: none;">${fn:escapeXml(post.content)}</div>
+
         <header id="header">
-            <h1><a href="../index.jsp"><img src="../img/textlogo.png" alt="상세페이지 로고"></a></h1>
+            <jsp:include page="/include/header.jsp"/>
+
             <div class="icon">
                 <a href="<c:url value='/board/list.do'><c:param name='board' value='${post.boardId}' /></c:url>">
                     <button type="button" class="btn btn-outline-success">List</button>
@@ -27,18 +30,21 @@
                     <button type="button" class="btn btn-outline-warning">Edit</button>
                 </a>
             </div>
+
         </header>
 
         <main id="main">
             <!-- Additional information -->
-            <div id="post-info" style="padding: 40px 50px 20px; background: url('../img/titlebg.jpg') no-repeat bottom; background-size: 1800px; text-align: center;">
+            <div id="post-info"
+                 style="padding: 40px 50px 20px; background: #ffffff; background-size: 1800px;
+                 text-align: center; border: 2px solid #f686cf">
                 <h2 id="post-title" style="font-weight: 700; color: #eece84">TITLE: ${post.title}</h2>
                 <p id="post-author" style="font-weight: 600;  color: #e7fcbc">AUTHOR: ${post.author_uid}</p>
                 <p id="post-date" style="font-weight: 600;  color: #e7fcbc">DATE: <fmt:formatDate value="${post.postdate}" pattern="yyyy-MM-dd"/></p>
-                <p id="post-views" style="font-weight: 600;  color: #e7fcbc">VISIT: ${post.visitcount}</p>
+                <p id="post-views" style="font-weight: 600;  color: #e1f6e3">VISIT: ${post.visitcount}</p>
             </div>
 
-            <div id="viewer" style="background: #e1f6e3; min-height: 800px; padding: 10px; transform: translate(0, 30px)"></div>
+            <div id="viewer" style="background: #f3cde6; min-height: 800px; padding: 10px; transform: translate(0, 30px)"></div>
         </main>
 
 

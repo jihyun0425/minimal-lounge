@@ -9,6 +9,7 @@
 <head>
     <title>상품후기</title>
     <link rel="stylesheet" type="text/css" href="../css/communitypagestyle.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/header.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -16,36 +17,8 @@
 <body>
 
     <div id="wrap">
-        <header id="header">
-            <h1>
-                <a href="../index.jsp"><img src="../img/mainlogo.png" alt="ReCoderLogo"/></a>
-            </h1>
+        <jsp:include page="../include/header.jsp"/>
 
-            <ul class="login">
-                <c:if test="${empty sessionScope.userId}">
-                    <li><a href="<c:url value='/member/login.do'/>">로그인</a></li>
-                    <li><a href="<c:url value='/member/join.do'/>">회원가입</a></li>
-                </c:if>
-                <c:if test="${not empty sessionScope.userId}">
-                    <li><a href="<c:url value='/member/logout.do'/>">로그아웃</a></li>
-                    <li><a href="<c:url value='/member/mypage.do'><c:param name='action' value='mypage' /></c:url>">마이페이지</a>
-                    </li>
-                </c:if>
-            </ul>
-
-            <nav id="menu">
-                <ul>
-                    <li>
-                        <a href="<c:url value='/board/profile.do'><c:param name='action' value='intro' /></c:url>">소개</a>
-                    </li>
-                    <li><a href="<c:url value='/shop/goods.do'><c:param name='category' value='goods' /></c:url>">상점</a>
-                    </li>
-                    <li><a href="<c:url value='/board/list.do'><c:param name='board' value='1' /></c:url>">상품후기</a></li>
-                    <li><a href="<c:url value='/board/list.do'><c:param name='board' value='2' /></c:url>">FAQ</a></li>
-
-                </ul>
-            </nav>
-        </header>
 
         <main id="main">
             <div class="container">
@@ -92,7 +65,7 @@
             </div>
         </main>
 
-        <footer id="footer">
+        <footer>
             <jsp:include page="../include/Footer.jsp"/>
         </footer>
 

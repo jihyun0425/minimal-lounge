@@ -4,12 +4,13 @@
 <head>
     <title>상점 페이지</title>
     <link rel="stylesheet" type="text/css" href="../css/goods.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/header.css"/>
     <script src="../js/shop.js"></script>
 </head>
 <body>
 <div id="wrap">
     <header>
-        <jsp:include page="goodsPage.jsp"/>
+        <jsp:include page="/include/header.jsp"/>
     </header>
 
 

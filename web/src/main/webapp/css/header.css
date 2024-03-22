@@ -1,0 +1,33 @@
+#header {background: white}
+
+h1 {text-align: center;}
+h1 a {color: #ef8686; text-decoration: none;}
+.login{translate: 1500px; display: flex; font-size: 1rem; font-weight: 600;}
+.login a {text-decoration: none; color: black; padding: 0 10px; font-weight: 600}
+
+#header {position: relative}
+
+#menu{
+    width: 100%;
+    display: block;
+    padding-top: 10px;
+}
+#menu ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(245, 148, 206, 0.58);
+    list-style: none;
+    margin: 0;
+}
+#menu ul li{
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 20px;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}

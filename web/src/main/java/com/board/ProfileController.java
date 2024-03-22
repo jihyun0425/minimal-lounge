@@ -18,9 +18,6 @@ public class ProfileController extends HttpServlet {
 
         switch (action) {
             case "intro" -> req.getRequestDispatcher("/board/profilePage.jsp").forward(req, resp);
-            case "hero" -> {
-                req.getRequestDispatcher("/board/profilePage02.jsp").forward(req, resp);
-            }
             default -> {
                 resp.setContentType("text/html;charset=UTF-8");
                 PrintWriter out = resp.getWriter();
