@@ -17,7 +17,9 @@
 
         </main>
 
-        <footer id="footer">Copyright (c) 2023 Re-Coder</footer>
+        <footer id="footer">
+            <p>Copyright (c) 2023 Re-Coder</p>
+        </footer>
 
     </div>
 

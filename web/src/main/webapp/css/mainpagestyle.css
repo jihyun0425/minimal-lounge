@@ -40,3 +40,56 @@ ul{list-style: none;}
     background: url("../img/mainfooter.png") no-repeat center white;
     background-size: 500px;
 }
+
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/
+@media all and (min-width:1024px) and (max-width:1279px) {
+
+
+    #main div {
+        width: 1024px;
+        height: 700px;
+    }
+
+}
+
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+
+    #main div {
+        width: 768px;
+        height: 500px;
+    }
+
+    #footer p {transform: translate(0, 20px) }
+}
+
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width:480px) and (max-width:767px) {
+
+    #main div {
+        width: 480px;
+        height: 400px;
+    }
+
+    #footer {background-size: 400px;
+        font-size: 0.8rem;
+    }
+
+    #footer p {transform: translate(0, 20px) }
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width:479px) {
+
+    #main div {
+        width: 375px;
+        height: 300px;
+    }
+
+    #footer {
+        background-size: 300px;
+        font-size: 0.8rem;
+    }
+
+    #footer p {transform: translate(0, 20px) }
+}

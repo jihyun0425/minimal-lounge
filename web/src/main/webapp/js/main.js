@@ -15,3 +15,14 @@ wrap.offsetWidth;
 wrap.classList.remove("max-height-container");
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".login");
+
+    menuToggle.addEventListener("click", function() {
+        menu.classList.toggle("active"); // 메뉴의 활성/비활성 상태를 토글
+        menuToggle.classList.toggle("active"); // 햄버거 버튼의 활성/비활성 상태를 토글
+    });
+});
+
+

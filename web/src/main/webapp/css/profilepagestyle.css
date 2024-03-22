@@ -12,17 +12,59 @@ h1 img {width: 500px; }
 
 header{height: 300px;}
 
-.menu {
-    display: flex; width: 800px; height: 50px; transform: translate(700px, -350px);
-    text-align: center; justify-content: space-around; border-top: 1px solid #d3f592; border-bottom: 1px solid #d3f592;
-}
-.menu li {font-size: 1rem; padding-top: 12px; color: #f3ed80;}
-.menu li a{text-decoration: none; color: #f3ed80;}
 
 #sec1 {background: url("../img/profilesec1.jpg") no-repeat left; width: 100%; height: 400px;}
 #sec1 p {font-weight: 500; color: #f5dfdf; font-size: 1.2rem; text-align: center; padding-top: 200px;}
 
 #sec2 {height: 700px; background: #f3e5e5;}
+#sec2 p {
+    font-size: 1.4rem; font-weight: 400; color: #726f6f;
+    text-align: center; padding-top: 200px; line-height: 2
+}
+
+
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/
+@media all and (min-width:1024px) and (max-width:1279px) {
+
+    header{height: 200px}
+
+}
+
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+
+    header{height: 200px}
+
+    #sec1 {height: 350px; background-size: 1030px;}
+    #sec2 {height: 600px}
+
+    #sec1 p{font-size: 1.2rem; padding-top: 150px;}
+    #sec2 p {font-size: 1.2rem; padding-top: 150px;}
+}
+
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width:480px) and (max-width:767px) {
+    header{height: 200px}
+
+    #sec1 {height: 300px; background-size: 800px;}
+    #sec2 {height: 500px}
+
+    #sec1 p{font-size: 1rem; padding-top: 100px;}
+    #sec2 p {font-size: 1rem; padding-top: 100px;}
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width:479px) {
+
+    header{height: 200px}
+
+    #sec1 {height: 200px; background-size: 400px;}
+    #sec2 {height: 400px}
+
+    #sec1 p{font-size: 0.7rem; padding-top: 50px;}
+    #sec2 p {font-size: 0.8rem; padding-top: 50px;}
+
+}
 
 
 

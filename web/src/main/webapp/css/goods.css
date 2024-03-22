@@ -20,3 +20,47 @@ ul{list-style: none;}
     right: 10vw;
     bottom: 60vh;
 }
+
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/
+@media all and (min-width:1024px) and (max-width:1279px) {
+    .content {padding: 80px; gap: 40px;}
+    .content dl img{width: 250px; height: 250px;}
+    .content dl dd p:nth-child(1) {font-size: 1.3rem; font-weight: 700;}
+    .content dl dd p:nth-child(2) {font-size: 1rem; font-weight: 400;}
+
+    .basket img{width: 150px}
+
+}
+
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+    .content {padding: 80px; gap: 30px;}
+    .content dl img{width: 200px; height: 200px;}
+    .content dl dd p:nth-child(1) {font-size: 1.2rem; font-weight: 700;}
+    .content dl dd p:nth-child(2) {font-size: 1rem; font-weight: 400;}
+
+    .basket img{width: 150px}
+
+}
+
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width:480px) and (max-width:767px) {
+
+    .content {padding: 70px; gap: 20px;}
+    .content dl img{width: 150px; height: 150px;}
+    .content dl dd p:nth-child(1) {font-size: 1.2rem; font-weight: 700;}
+    .content dl dd p:nth-child(2) {font-size: 1rem; font-weight: 400;}
+
+    .basket img{width: 100px}
+
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width:479px) {
+    .content {padding: 60px; gap: 10px;}
+    .content dl img{width: 100px; height: 100px;}
+    .content dl dd p:nth-child(1) {font-size: 1rem; font-weight: 600;}
+    .content dl dd p:nth-child(2) {font-size: 0.8rem; font-weight: 400;}
+
+    .basket img{width: 100px}
+}
