@@ -8,8 +8,8 @@ body { overflow-x: hidden; font-family: 'Noto Sans KR', sans-serif; font-size: 1
 *{margin: 0; padding: 0;}
 
 .max-height-container {
-    max-height: 1450px; /* Adjust as needed */
-    overflow: hidden; /* Optional: to hide content that exceeds the height */
+    max-height: 1450px;
+    overflow: hidden;
 }
 
 ul{list-style: none;}

@@ -6,12 +6,13 @@
     <title>FAQ</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/faqpagestyle.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/header.css"/>
 </head>
 <body>
 
 <div id="wrap">
-<header id="header">
-    <h1><img src="../img/faqlogo.png"></h1>
+<header>
+    <jsp:include page="/include/header.jsp"/>
 </header>
 
 <div class="container">

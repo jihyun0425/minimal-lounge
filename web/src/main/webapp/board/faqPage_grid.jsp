@@ -6,6 +6,36 @@
     <title>Title</title>
     <script src="https://uicdn.toast.com/grid/latest/tui-grid.js"></script>
     <link rel="stylesheet" href="https://uicdn.toast.com/grid/latest/tui-grid.css"/>
+
+    <style>
+        body{font-size: 1.8rem;}
+
+        /* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/
+        @media all and (min-width:1024px) and (max-width:1279px) {
+
+            body {font-size: 1.6rem;}
+
+        }
+
+        /* 테블릿 가로 (해상도 768px ~ 1023px)*/
+        @media all and (min-width:768px) and (max-width:1023px) {
+
+            body {font-size: 1.4rem;}
+        }
+
+        /* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/
+        @media all and (min-width:480px) and (max-width:767px) {
+
+            body {font-size: 1.2rem;}
+        }
+
+        /* 모바일 세로 (해상도 ~ 479px)*/
+        @media all and (max-width:479px) {
+
+            body {font-size: 1rem;}
+        }
+
+    </style>
 </head>
 <body>
     <a href="<c:url value='/board/write.do'><c:param name='board' value='2' /><c:param name='action' value='write' /></c:url>">

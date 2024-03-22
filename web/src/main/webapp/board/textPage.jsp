@@ -44,7 +44,7 @@
                 <p id="post-views" style="font-weight: 600;  color: #e1f6e3">VISIT: ${post.visitcount}</p>
             </div>
 
-            <div id="viewer" style="background: #f3cde6; min-height: 800px; padding: 10px; transform: translate(0, 30px)"></div>
+            <div id="viewer" ></div>
         </main>
 
 

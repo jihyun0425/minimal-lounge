@@ -15,6 +15,66 @@ h1 img{width: 500px;}
 
 #main {min-height: 1000px; padding: 0 100px; }
 
+#viewer {background: #f3cde6; min-height: 800px; padding: 10px; transform: translate(0, 30px)}
+
 footer{transform: translate(0, 50px)}
 
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/
+@media all and (min-width:1024px) and (max-width:1279px) {
+
+    body{font-size: 1.4rem}
+
+    .icon {
+        padding-left: 100px; transform: translate(0, -120px)
+    }
+
+    #main {min-height: 500px;}
+
+    #post-info {width: 900px; transform: translate(-100px, -100px) }
+    #viewer {min-height: 400px; width: 900px; transform: translate(-100px, -70px)}
+}
+
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+
+    body{font-size: 1.2rem}
+
+    .icon {
+        padding-left: 300px; transform: translate(0, -100px)
+    }
+
+    #main {min-height: 500px;}
+
+    #post-info {width: 800px; transform: translate(50px, -100px) }
+    #viewer {min-height: 300px; width: 800px; transform: translate(50px, -70px)}
+}
+
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width:480px) and (max-width:767px) {
+
+    body{font-size: 1rem}
+
+    .icon {
+        padding-left: 300px; transform: translate(50px, -200px)
+    }
+
+    #main {min-height: 500px;}
+
+    #post-info {width: 500px; transform: translate(-50px, -100px) }
+    #viewer {min-height: 300px; width: 500px; transform: translate(-50px, -70px)}
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width:479px) {
+    body{font-size: 1rem}
+
+    .icon {
+        padding-left: 300px; transform: translate(0, -200px)
+    }
+
+    #main {min-height: 400px;}
+
+    #post-info {width: 300px; transform: translate(-80px, -100px) }
+    #viewer {min-height: 200px; width: 300px; transform: translate(-80px, -70px)}
+}
 

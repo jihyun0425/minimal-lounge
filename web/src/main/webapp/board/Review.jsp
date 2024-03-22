@@ -17,8 +17,9 @@
 <body>
 
     <div id="wrap">
+        <header>
         <jsp:include page="../include/header.jsp"/>
-
+        </header>
 
         <main id="main">
             <div class="container">
